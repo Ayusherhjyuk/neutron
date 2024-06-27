@@ -2,32 +2,418 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.text{
+  font-family: fantasy;
+  font-size: 24px;
+   font: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.text:hover{
+ color: yellow;
+ 
+}
+
+.background{
+  background-image: url('https://wallpapers.com/images/featured-full/black-and-grey-background-8vp9euqfblpd9ot2.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.ongoingcard{
+  background-image: url('https://wstatic-prod.pubg.com/web/live/main_4e11786/img/0a33c8d.png');
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.ongoingcard:hover{
+  scale: 1.05;
+  transform: translateY(-10px); /* Move box 10px upwards on hover */
+  box-shadow: 1px 14px 20px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.updown{
+  animation: animate .8s ease-in infinite;
+}
+@keyframes animate {
+  0%{
+      transform: translatey(5px);
+  }
+  50%{
+      transform: translatey(-5px);
+  }
+  100%{
+      transform: translatey(5px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+.videoupdown{
+  animation: dropFromTop  .8s ease-in ;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+
+@keyframes dropFromTop {
+  0% {
+      transform: translateY(-80%);
+      opacity: 0;
   }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+
+.homecard:hover{
+  scale: 1.08;
+ box-shadow: 10px 20px 10px ;
+ 
+}
+.hamclo{
+  display: none;
+}
+
+.hamburger{
+  background-color: white;
+  border: 0px solid black;
+  border-radius: 18px;
+}
+
+
+/* ------------responsive----------------------------------------------------------- */
+
+
+
+@media (max-width:1100px){
+  .social{
+    position: relative;
+    left: 80px;
+  }
+  #compete{
+    right: 0;
+  }
+  #conquer{
+    right: 0;
+  }
+  #celebrate{
+    left: 0;
+  }
+
+  .ongoingcard{
+    height: 12rem;
+    width: 600px;
+  }
+
+  .ongoingcardbtn{
+   top:  60px;
+  
+  }
+  .ongoingcardtitle{
+     font-size:  20px;
+     line-height: 20px;
+  }
+  .sidetext{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:800px){
+  .ongoingcard{
+    position: relative;
+    width: 550px;
+    right: 70px;
+  }
+  .sidetext{
+    font-size: 14px;
+  }
+  .ongoingcardbtn{
+    top:  50px;
+   
+   }
+}
+
+@media (max-width:740px){
+  .social{
+   
+    display: none;
+  }
+}
+
+
+@media (max-width:700px){
+.videopage1{
+  display: flex;
+  flex-direction: column;
+}
+.logincard {
+  position: relative;
+  left: 87px;
+}
+.hamclo{
+  display: block;
+}
+.videopage1text {
+  width: 101%;
+  position: relative;
+}
+.ongoingcard{
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 300px;
+ left: 0px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.loginbtn{
+  display: none;
+}
+.tourpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.tourpageside{ 
+   display: flex;
+  flex-direction: row;
+ 
+}
+.tourpageup{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+   height: 60px;
+   align-items: center;
+ 
+}
+.belownav{
+  display: none;
+
+}
+
+.cardimg{
+  width: 50%;
+  height: 40%;
+}
+.carddet{
+  width: 100%;
+  position: relative;
+  
+}
+.ongoingcardtitle{
+  position: relative;
+  top: 8px;
+}
+.price{
+position: relative;
+bottom: 25px;
+}
+.date{
+position: relative;
+bottom: -5px;
+}
+.ongoingcardbtn{
+position: relative;
+top: 20px;
+}
+
+.contactform{
+  position: relative;
+  top: -170px;
+  right: 0;
+}
+ .contactcont{
+    display: flex;
+    flex-direction: column;
+  }
+  .contactcont1{
+    width: 100%;
+    font-size: 12px;
+  }
+
+ 
+  
+  
+  .close{
+    display: block;
+  }
+  .hamburger img {
+    height: 29px;
+    width: 28px;
+    position: relative;
+  
+    display: block;
+  }
+  .close img{
+    height: 29px;
+    width: 28px;
+    position: relative;
+    
+    display: block;
+  }
+  .page2{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .page2ccc{
+    gap: 14px;
+    bottom: 7px;
+    width: 30%;
+    
+  }
+
+}
+
+@media (max-width:600px){
+  
+.videopage1textpara{
+ display: none;
+}
+.noticard{
+  width: 100%;
+}
+
+}
+
+
+@media (max-width:530px){
+  .ongoingcard{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+   left: 0px;
+   right: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .noticard{
+     padding-left: 10px;
+    
+  }
+ 
+  .tourpageup{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+      gap: 10px;
+     height: 60px;
+     align-items: center;
+   
+  }
+  .noticard{
+    width: 93%;
+    padding-right: 31px;
+    
+  }
+  .logincard {
+    position: relative;
+    left: 77px;
+    width: 249px;
+}
+.page1{
+  height: 345px;
+}
+}
+
+@media (max-width: 430px){
+ 
+  .ongoingcard{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 26px;
+    width: 298px;
+    height: 233px;
+    left: -66px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .text-animation {
+    font-size: 50px;
+  }
+  .contactform{
+    position: relative;
+    top: -170px;
+    width: 300px;
+    right: 0;
+  }
+  
+  .noticard{
+    width: 111%;
+    
+  }
+  .date{
+   display: none;
+    }
+    .winnername{
+      position: relative;
+      top: 6px;
+    }
+    .noticard{
+      width: 130%;
+      
+    }
+}
+
+
+@media (max-width: 360px){
+
+  .ongoingcard{
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    width: 272px;
+    height: 240px;
+    left: -78px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .logincard {
+    position: relative;
+    left: 41px;
+    width: 252px;
+}
+  .noticard{
+    width: 118%;
+    
+  }
+
+
+}
+
+
+
+
+
+.hamburger img {
+  height: 29px;
+  width: 28px;
+  position: relative;
+
+  
+}
+.close img{
+  height: 29px;
+  width: 28px;
+  position: relative;
+  
+  
 }
