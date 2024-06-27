@@ -335,19 +335,19 @@ const Navbar = () => {
     trigger="hover"
     >
 </lord-icon></div>
-    <div className='text   text-red-100'>Home</div>
+    <div className='text   text-white'>Home</div>
     </div></Link>
 
 
     <Link href={"/ongoingtour"}><div className=' textdiv flex justify-center items-center '>
     <div><img className=' size-7' src='/trophy.png'></img></div>
-    <div className='text text-red-100' >Tournaments</div>
+    <div className='text text-white' >Tournaments</div>
     </div></Link>
 
  
    <Link href={"/Scrims"}> <div className=' textdiv flex justify-center items-center '>
    <div><img className=' size-7' src='/battle.png'></img></div>
-    <div className='text text-red-100'>Scrims</div>
+    <div className='text text-white'>Scrims</div>
     </div></Link>
 
 
@@ -358,7 +358,7 @@ const Navbar = () => {
 
    <Link href={"/contact"}> <div className=' flex justify-center items-center '>
    <div><img className=' size-7' src='/phone.png'></img></div>
-    <div className='text text-red-100'>Contact</div>
+    <div className='text text-white'>Contact</div>
     </div></Link>
 
 
