@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 
 export default function Home() {
@@ -37,7 +38,7 @@ export default function Home() {
    
 </div>   
 <div> 
- <img src="https://wstatic-prod.pubg.com/web/live/main_4e11786/img/1d300c0.png"></img>
+ <Image src="https://wstatic-prod.pubg.com/web/live/main_4e11786/img/1d300c0.png" width={1000} height={1000}></Image>
 
 </div>
 
@@ -53,7 +54,7 @@ export default function Home() {
 
 
 <div class=" homecard max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <img className="  size-10" src="/tournaments.png"></img>
+    <Image className="  size-10" src="/tournaments.png" width={500} height={500}></Image>
     <a href="/ongoingtour">
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Regular Tournaments</h5>
     </a>
@@ -70,7 +71,7 @@ Our organization hosts regular tournaments that bring together competitors from 
 
 
 <div class=" homecard max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-<img className="  size-10" src="/scrims.png"></img>
+<Image className="  size-10" src="/scrims.png" width={500} height={500}></Image>
     <a href="/scrims">
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Regular Scrims</h5>
     </a>
@@ -87,7 +88,7 @@ Our organization conducts regular scrims to sharpen skills and foster teamwork. 
 
 
 <div class=" homecard max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-<img className="  size-10" src="/contact.png"></img>
+<Image className="  size-10" src="/contact.png" width={500} height={500}></Image>
     <a href="/contact">
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Support Team</h5>
     </a>
@@ -104,7 +105,7 @@ We provide excellent support and are readily accessible for all your needs. Cont
 
 
 <div class=" homecard  max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-<img className="  size-10" src="/registration.png"></img>
+<Image className="  size-10" src="/registration.png" width={500} height={500}></Image>
     <a href="/ongoingtour">
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Easy Registration</h5>
     </a>
@@ -122,7 +123,7 @@ Our tournaments offer hassle-free registration, ensuring a smooth and efficient 
 
   
 <div class=" homecard max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-<img className="  size-10" src="/fair-play.png"></img>
+<Image className="  size-10" src="/fair-play.png"width={500} height={500}></Image>
     <a href="/ongoingtour">
         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Fare Gaming</h5>
     </a>

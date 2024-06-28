@@ -1,10 +1,10 @@
 "use client"
-import React from 'react'
+import React,{ useEffect, useState } from 'react'
 import Link from 'next/link'
 import axios from 'axios'
-import { useEffect, useState } from "react";
+import Image from 'next/image'
 
-const pasttour = () => {
+const Pasttour = () => {
 
     const [users, setUsers] = useState([]);
 
@@ -38,10 +38,10 @@ const pasttour = () => {
 
 
 {users.map((user, index) => (
-    <div className='flex  h-60 ongoingcard key={index}'>
+    <div className='flex  h-60 ongoingcard 'key={index}>
         <div className='cardimg w-[40%]'>
             
-            <img className='h-full w-full object-cover' src={user.imgurl} alt='img'></img>
+            <Image className='h-full w-full object-cover' src={user.imgurl} alt='img'></Image>
         </div>
         <div className='carddet w-[60%] flex flex-col items-center relative'>
             <p className=' ongoingcardtitle text-4xl relative top-5'>{user.title}</p> 
@@ -74,4 +74,4 @@ const pasttour = () => {
   )
 }
 
-export default pasttour
+export default Pasttour
