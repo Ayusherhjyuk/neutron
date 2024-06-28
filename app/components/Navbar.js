@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
+import Image from 'next/image'
 
 
 
@@ -49,7 +50,7 @@ const Navbar = () => {
     <nav>
       <div className='flex  h-[70px] bg-black text-cyan-50 p-4 justify-between' >
       <Link className='logo font-bold  size-14 ' href={"/"}> 
-     <img className=' scale-x-150 scale-150 relative bottom-[16px] ' src='/neutronlogoori.png'></img>
+     <Image className=' scale-x-150 scale-150 relative bottom-[16px] ' src='/neutronlogoori.png' alt=''></Image>
     
       </Link> 
 
@@ -90,7 +91,7 @@ const Navbar = () => {
 </button>
 
 
-<div  id="dropdownNotification" className={`  bg-white z-20 relative ${showdropdown ? "" : "hidden"}   w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700`} aria-labelledby="dropdownNotificationButton">
+<div  id="dropdownNotification" className={`  bg-white z-20 relative ${showdropdown ? "" : "hidden"}   w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700 `} aria-labelledby="dropdownNotificationButton">
   <div className="block bg-white px-4 py-2 font-medium text-center text-gray-700 rounded-t-lg   dark:text-white">
       Notifications
   </div>
@@ -101,7 +102,7 @@ const Navbar = () => {
 
     <a href={user.link} key={index} className="flex  z-30 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-700">
       <div className="flex-shrink-0">
-        <img className="rounded-full w-11 h-11" src="/bell.png" alt="Jese image"></img>
+        <Image className="rounded-full w-11 h-11" src="/bell.png" alt="Jese image"></Image>
         
       </div>
       <div className="w-full   ps-3">
@@ -203,7 +204,7 @@ const Navbar = () => {
       </div>
       <div className='  hamclo flex  flex-row-reverse '>
 <button onClick={() => setshowdropdown1(!showdropdown1)} id="dropdownNotificationButton" data-dropdown-toggle="dropdownNotification" className="relative inline-flex text-sm font-medium text-center text-gray-500 hover:text-gray-900 focus:outline-none dark:hover:text-white dark:text-gray-400" type="button">
-<img className=' relative  hamburger  size-8' src='hamburger.png'></img>
+<Image className=' relative  hamburger  size-8' src='hamburger.png' alt=''></Image>
 
 
 </button>
@@ -237,13 +238,13 @@ const Navbar = () => {
 
 
     <Link href={"/ongoingtour"}><div className=' textdiv flex justify-center items-center '>
-    <div><img className=' size-7' src='/trophy.png'></img></div>
+    <div><Image className=' size-7' src='/trophy.png' alt=''></Image></div>
     <div className='text text-black' >Tournaments</div>
     </div></Link>
 
  
    <Link href={"/Scrims"}> <div className=' textdiv flex justify-center items-center '>
-   <div><img className=' size-7' src='/battle.png'></img></div>
+   <div><Image className=' size-7' src='/battle.png' alt=''></Image></div>
     <div className='text  text-black'>Scrims</div>
     </div></Link>
 
@@ -254,7 +255,7 @@ const Navbar = () => {
  
 
    <Link href={"/contact"}> <div className=' flex justify-center items-center '>
-   <div><img className=' size-7' src='/phone.png'></img></div>
+   <div><Image className=' size-7' src='/phone.png' alt=''></Image></div>
     <div className='text  text-black'>Contact</div>
     </div></Link>
 
@@ -340,13 +341,13 @@ const Navbar = () => {
 
 
     <Link href={"/ongoingtour"}><div className=' textdiv flex justify-center items-center '>
-    <div><img className=' size-7' src='/trophy.png'></img></div>
+    <div><Image className=' size-7' src='/trophy.png' alt=''></Image></div>
     <div className='text text-white' >Tournaments</div>
     </div></Link>
 
  
    <Link href={"/Scrims"}> <div className=' textdiv flex justify-center items-center '>
-   <div><img className=' size-7' src='/battle.png'></img></div>
+   <div><Image className=' size-7' src='/battle.png' alt=''></Image></div>
     <div className='text text-white'>Scrims</div>
     </div></Link>
 
@@ -357,7 +358,7 @@ const Navbar = () => {
  
 
    <Link href={"/contact"}> <div className=' flex justify-center items-center '>
-   <div><img className=' size-7' src='/phone.png'></img></div>
+   <div><Image className=' size-7' src='/phone.png' alt=''></Image></div>
     <div className='text text-white'>Contact</div>
     </div></Link>
 

@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { signIn } from 'next-auth/react'
+import Image from 'next/image'
 
 const page = () => {
   return (
@@ -20,7 +21,7 @@ Sign in with Google
 </button>
 
 <button onClick={()=>{signIn("discord")}} type="button" className="text-white  w-56 bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 me-2 mb-2">
-<img className=' size-6' src='/discord.png'></img>
+<Image className=' size-6' src='/discord.png' alt=''></Image>
 Sign in with Discord
 </button>
 
