@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
 import Image from 'next/image'
+import Script from 'next/script'
 
 
 
@@ -107,7 +108,7 @@ const Navbar = () => {
       </div>
       <div className="w-full   ps-3">
           <div className="text-gray-500 text-sm mb-1.5 dark:text-gray-400"> <span className="font-semibold text-gray-900 dark:text-white">{user.title}</span>
-          <div> "{user.description}"</div></div>
+          <div> {user.description}</div></div>
           <div className="text-xs text-blue-600 dark:text-blue-500">{new Date(user.createdAt).toLocaleDateString() }</div>
       </div>
     </a>
@@ -225,7 +226,7 @@ const Navbar = () => {
    
    <Link href={"/"}>
    <div className=' flex justify-center items-center '>
-    <div><script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <div><Script src="https://cdn.lordicon.com/lordicon.js"></Script>
 <lord-icon
     src="https://cdn.lordicon.com/epietrpn.json"
     trigger="hover"
@@ -330,7 +331,7 @@ const Navbar = () => {
 
    <Link href={"/"}>
    <div className=' flex justify-center items-center '>
-    <div><script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <div><Script src="https://cdn.lordicon.com/lordicon.js"></Script>
 <lord-icon
     src="https://cdn.lordicon.com/epietrpn.json"
     trigger="hover"
