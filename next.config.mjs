@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = { 
+        output: 'export',
+        
     images: {
-        domains: ['wstatic-prod.pubg.com'],
+        unoptimized: true,
       },
+      
 };
 
 export default nextConfig;

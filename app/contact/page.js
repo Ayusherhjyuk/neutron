@@ -63,9 +63,9 @@ const Page = () => {
           <div className=' text-6xl relative  top-24  font-bold'> GET IN TOUCH WITH US</div>
    <div className='  relative left-8 flex gap-7  top-24 h-60 '>
       
-        < a href='https://www.instagram.com/neutron_esports_?igsh=MWg2dWMzOTNxNzJhMg=='><div className=' size-10'><Image src="/instagram.png" alt="" ></Image></div></a>
-       <a href="https://m.youtube.com/@Neutron_esports/streams"><div className=' size-10'><Image src="/youtube.png" alt="" ></Image></div></a>
-        < a href='https://discord.com/invite/EH8GH3XNY4?fbclid=PAZXh0bgNhZW0CMTEAAaZbRwN_88cecpSYhcCc0KetNNusLq5F6tdU5ao50T4oyHIvFpooXScZB20_aem_Zp9bs6-Z5DFAGHyOY-CTMg'><div className=' size-10'><Image src="/discord.png" alt="" ></Image></div></a>
+        < a href='https://www.instagram.com/neutron_esports_?igsh=MWg2dWMzOTNxNzJhMg=='><div className=' size-10'><Image src="/instagram.png" alt=""  width={1000} height={1000}></Image></div></a>
+       <a href="https://m.youtube.com/@Neutron_esports/streams"><div className=' size-10'><Image src="/youtube.png" alt="" width={1000} height={1000}></Image></div></a>
+        < a href='https://discord.com/invite/EH8GH3XNY4?fbclid=PAZXh0bgNhZW0CMTEAAaZbRwN_88cecpSYhcCc0KetNNusLq5F6tdU5ao50T4oyHIvFpooXScZB20_aem_Zp9bs6-Z5DFAGHyOY-CTMg'><div className=' size-10'><Image src="/discord.png" alt=""  width={1000} height={1000}></Image></div></a>
    </div>
    </div>
    <div className=' h-full '>

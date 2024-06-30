@@ -43,7 +43,7 @@ const Ongoingtour = () => {
     <div className='flex    h-60 ongoingcard 'key={index}>
         <div className='cardimg w-[40%]'>
             
-            <Image className='h-full w-full object-cover' src={user.imgurl} alt='img'></Image>
+            <Image className='h-full w-full object-cover' src={user.imgurl} alt='img' width={1000} height={1000}></Image>
         </div>
         <div className=' carddet w-[60%] flex flex-col items-center  relative'>
             <p className=' ongoingcardtitle text-4xl relative top-5'>{user.title}</p> 
